@@ -233,6 +233,16 @@
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate("window height"),
           },
+          {
+            opcode: "pageW",
+            blockType: Scratch.BlockType.REPORTER,
+            text: Scratch.translate("page width"),
+          },
+          {
+            opcode: "pageH",
+            blockType: Scratch.BlockType.REPORTER,
+            text: Scratch.translate("page height"),
+          },
 
           "---",
 
@@ -514,6 +524,12 @@
     }
     windowH() {
       return window.outerHeight;
+    }
+    pageW() {
+      return window.innerWidth;
+    }
+    pageH() {
+      return window.innerHeight;
     }
     isTouchingEdge() {
       const edgeX = screen.width - window.outerWidth;
