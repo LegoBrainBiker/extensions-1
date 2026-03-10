@@ -309,6 +309,27 @@ This reporter returns the height of the Program Window.
 
 **This is supported outside of Electron, Pop Ups, and Web Apps.**
 
+## Page Width Reporter
+
+```scratch
+(page width :: #359ed4)
+```
+
+This reporter returns the width of the veiwport (the area that can be displayed to by the web page).
+Although this may seem simmilar to window width, there is often a small gap between this and the window width. additionaly, some browsers use vertical tabs or have a sidebar that further reduces this.
+
+**This is supported outside of Electron, Pop Ups, and Web Apps.**
+
+## Page Height Reporter
+
+```scratch
+(page height :: #359ed4)
+```
+
+This reporter returns the height of the veiwport (the area that can be displayed to by the web page).
+
+**This is supported outside of Electron, Pop Ups, and Web Apps.**
+
 ## Is Window Touching Screen Edge Boolean
 
 ```scratch
